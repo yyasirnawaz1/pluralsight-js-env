@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "../src/index.html"));
 });
 
-app.listen(port, error => {
+app.listen(port, error =>
   if (error) {
     console.log(error);
   } else {
